@@ -20,9 +20,14 @@
     /* Navigation Color Scheme */
     --nav-text-color: white;
     --book-now-text-color: white;
-    --book-now-background-color: #008000;
+    --book-now-background-color: #00A000;
     --dot-color: transparent;    
     --dot-background-color: transparent;
+    /* Section Color Scheme */
+    --section-background-color: transparent;
+    --section-link-color: white;
+    --section-link-background-color: #008000;
+    --section-title-color: #643200;
     /* Footer Color Scheme */
     --footer-background-color: #643200;
     --footer-link-color: white;
@@ -98,7 +103,7 @@ header a:hover {
   position: absolute;
   bottom: 100px;
   left: 1100px; 
-  padding: 5px;
+  padding: 7px;
 }
 .book-now a{
   text-decoration: none;
@@ -121,6 +126,57 @@ header a:hover {
 }
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+/* Section CSS Coding */
+section {
+  background-color: var(--section-background-color);
+  text-align: center;
+  font-size: 1.2em;
+  font-family: var(--heading-font);
+  position: relative;
+  height: 870px;
+}
+section h2 {
+  color: var(--section-title-color);
+  font-size: 48px;
+  font-weight: 1000;
+  text-align: center;
+  border-bottom-style: solid;
+  border-color: #00A000;
+  border-width: 5px;
+  position: absolute;
+  top: 50px;
+  left: 845px;
+}
+section h1 {
+  background-color: var(--section-link-background-color);
+  color: var(--section-link-color);
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  bottom: 5px;
+  width: 590px;
+}
+.river-locations-s {
+  position: absolute;
+  right: 1215px;
+  bottom: 420px;
+}
+.pricing-s {
+  position: absolute;
+  left: 1215px;
+  bottom: 420px;
+}
+.about-s {
+  position: absolute;
+  right: 1215px;
+  bottom: 75px;
+  }
+.contact-us-s {
+  position: absolute;
+  left: 1215px;
+  bottom: 75px;
 }
 
 /* Footer CSS Coding */
@@ -150,24 +206,24 @@ footer a:link, footer a:visited {
 footer a:hover {
   text-decoration: underline;
 }
-.contact-us {
+.contact-us-f {
   width: 500px;
   position: absolute;
   bottom: 53px;
   left: 186px;
 }
-.river-locations {
+.river-locations-f {
   width: 500px;
   position: absolute;
   bottom: 76px;
   right: 1189px;
 }
-.site-map {
+.site-map-f {
   width: 500px;
   position: absolute;
   left: 1189px;
   }
-.social-media-links {
+.social-media-links-f {
   width: 500px;
   position: absolute;
   bottom: 143px;
