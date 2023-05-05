@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bruno+Ace+SC&display=swap');
+
+/* Website Color Scheme and Font */
+:root {
+    /* Main Color Scheme */
+    --primary-color: #643200;
+    --secondary-color: #D2B48C;
+    --accent1-color: #008000;
+    --accent2-color: #00A000;
+    /* Background Color */
+    --background-color: #D2B48C;
+    /* Font */
+    --heading-font: "Bruno Ace SC";
+    --paragraph-font: "Bruno Ace";
+    /* Header Color Scheme */
+    --header-background-color: #643200;
+    --header-link-color: white;
+    --header-hover-background-color: #a1896b;
+    --header-hover-link-color: #643200;
+    /* Navigation Color Scheme */
+    --nav-text-color: white;
+    --book-now-text-color: white;
+    --book-now-background-color: #008000;
+    --dot-color: transparent;    
+    --dot-background-color: transparent;
+    /* Main Color Scheme */
+    --headline-color-on-white: #643200;
+    --headline-color-on-color: white; 
+    --paragraph-color-on-white: #643200; 
+    --paragraph-color-on-color: white;
+    --paragraph-background-color: #643200;
+
+
+  }
+
+/* Background Color */  
+body {
+    background-color: var(--background-color);
+}
+
+/* Header CSS Coding */ 
+header {
+  background-color: var(--header-background-color);
+  text-align: center;
+  font-size: 1.2em;
+  font-family: var(--heading-font);
+  list-style-type: none;
+  padding: .5em;
+}
+header a {
+  min-width: 120px;
+  text-decoration: none;
+  padding: 15px;
+}
+header a:link, header a:visited {
+  color: var(--header-link-color);
+}  
+header a:hover {
+  color: var(--header-hover-link-color);
+  background-color: var(--header-hover-background-color);
+}
+
+/* Navigation CSS Coding */
+.slideshow-container {
+  position: relative;
+}
+.wwr-nav-photo{
+  width: 2385px;
+  height: 900px;
+  position: relative;
+}
+.RaftingRodeoImage{
+  width: 14%;
+  position: absolute;
+  top: 50px;
+  left: 25px;
+}
+.text {
+  color: var(--nav-text-color);
+  font-family: var(--heading-font);
+  font-size: 48px;
+  font-weight: 1000;
+  position: absolute;
+  bottom: 150px;
+  left: 712.5px; 
+}
+.book-now {
+  background-color: var(--book-now-background-color);
+  color: var(--book-now-text-color);
+  font-family: var(--heading-font);
+  font-size: 27px;
+  font-weight: 1000;
+  position: absolute;
+  bottom: 100px;
+  left: 1100px; 
+  padding: 5px;
+}
+.dot {
+  background-color: var(--dot-color);
+}
+.active {
+  background-color: var(--dot-background-color);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Navigation CSS Coding */

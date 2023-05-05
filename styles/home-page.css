@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
+body {
+    background-image: url(https://www.acelema.com/blog/wp-content/uploads/2022/07/1_5IYtIe5OwxeoYXi226J-Uw.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 2400px 1200px;
+}
+
 *{
     margin: 0;
     padding: 0;
