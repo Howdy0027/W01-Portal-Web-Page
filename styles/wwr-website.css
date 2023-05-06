@@ -28,6 +28,13 @@
     --section-link-color: white;
     --section-link-background-color: #008000;
     --section-title-color: #643200;
+    --section-title-border-color: #00A000;
+    /* Article Color Scheme */
+    --article-background-color: #a1896b;
+    --article-text-color: #643200;
+    
+    --article-link-background-color: #008000;
+    --article-title-color: #643200;
     /* Footer Color Scheme */
     --footer-background-color: #643200;
     --footer-link-color: white;
@@ -143,14 +150,14 @@ section h2 {
   font-weight: 1000;
   text-align: center;
   border-bottom-style: solid;
-  border-color: #00A000;
+  border-color: var(--section-link-background-color);
   border-width: 5px;
   position: absolute;
   top: 50px;
-  left: 845px;
+  left: 615px;
 }
 section h1 {
-  background-color: var(--section-link-background-color);
+  background-color: var(--section-title-border-color);
   color: var(--section-link-color);
   text-align: center;
   padding: 5px;
@@ -177,6 +184,37 @@ section h1 {
   position: absolute;
   left: 1215px;
   bottom: 75px;
+}
+
+/* Article CSS Coding */
+article {
+  background-color: var(--article-background-color);
+  text-align: center;
+  font-size: 1.2em;
+  font-family: var(--heading-font);
+  position: relative;
+  height: 870px;
+}
+article h2 {
+  color: var(--article-title-color);
+  font-size: 48px;
+  font-weight: 1000;
+  text-align: center;
+  border-bottom-style: solid;
+  border-color: #00A000;
+  border-width: 5px;
+  position: absolute;
+  top: 50px;
+  left: 615px;
+}
+article h1 {
+  background-color: var(--section-link-background-color);
+  color: var(--section-link-color);
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  bottom: 5px;
+  width: 590px;
 }
 
 /* Footer CSS Coding */
