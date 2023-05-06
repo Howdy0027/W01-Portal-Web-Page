@@ -32,14 +32,14 @@
     /* Article Color Scheme */
     --article-background-color: #a1896b;
     --article-text-color: #643200;
-    
-    --article-link-background-color: #008000;
+    --article-title-border-color: #00A000;
     --article-title-color: #643200;
     /* Footer Color Scheme */
     --footer-background-color: #643200;
     --footer-link-color: white;
     --footer-hover-background-color: #a1896b;
     --footer-hover-link-color: #643200;
+    --footer-copyright-color: white;
 
 
   }
@@ -201,20 +201,26 @@ article h2 {
   font-weight: 1000;
   text-align: center;
   border-bottom-style: solid;
-  border-color: #00A000;
+  border-color: var(--article-title-border-color);
   border-width: 5px;
   position: absolute;
   top: 50px;
-  left: 615px;
+  left: 605px;
 }
-article h1 {
-  background-color: var(--section-link-background-color);
-  color: var(--section-link-color);
-  text-align: center;
-  padding: 5px;
+.article-image {
   position: absolute;
-  bottom: 5px;
-  width: 590px;
+  top: 150px;
+  left: 130px;
+}
+article p {
+  color: var(--article-text-color);
+  font-size: 24px;
+  font-family: var(--paragraph-font);
+  position: absolute;
+  text-align: left;
+  top: 180px;
+  right: 130px; 
+  width: 1024px;
 }
 
 /* Footer CSS Coding */
@@ -224,7 +230,7 @@ footer {
   font-size: 1.2em;
   font-family: var(--heading-font);
   position: relative;
-  height: 280px;
+  height: 600px;
 }
 footer h1 {
   color: var(--footer-link-color);
@@ -247,13 +253,11 @@ footer a:hover {
 .contact-us-f {
   width: 500px;
   position: absolute;
-  bottom: 53px;
   left: 186px;
 }
 .river-locations-f {
   width: 500px;
   position: absolute;
-  bottom: 76px;
   right: 1189px;
 }
 .site-map-f {
@@ -264,6 +268,19 @@ footer a:hover {
 .social-media-links-f {
   width: 500px;
   position: absolute;
-  bottom: 143px;
   right: 186px;
+}
+.logo-f {
+  width: 500px;
+  position: absolute;
+  bottom: 50px;
+  left: 940px;
+}
+.copyright-f {
+  color: var(--footer-copyright-color);
+  font-family: var(--paragraph-font);
+  font-size: 15px;
+  position: absolute;
+  bottom: 25px;
+  left: 995px;
 }
