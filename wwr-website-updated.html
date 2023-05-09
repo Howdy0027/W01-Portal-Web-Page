@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodeo Rafting</title>
+    <script src="https://kit.fontawesome.com/deb4b5af55.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/wwr-website-updated.css" />
+</head>
+<body>
+    <header>
+        <ul>
+            <a href="wwr-website-updated.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="wwr-river-locations.html"><i class="fa-solid fa-mountain-sun"></i> River Locations</a>
+            <a href="wwr-pricing.html"><i class="fa-solid fa-dollar-sign"></i> Pricing</a>
+            <a href="wwr-about.html"><i class="fa-solid fa-users"></i> About</a>
+            <a href="wwr-contact.html"><i class="fa-solid fa-address-card"></i> Contact Us</a>
+        </ul>
+    </header>
+    <nav>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="wwr-nav-photo" src="images/wwr-nav-1.jpeg">
+                <img class="RaftingRodeoImage" src="images/RaftingRodeoImage.png">
+                <div class="text">The Wildest Ride In The Frontier</div>
+                <div class="book-now">
+                    <a href="#">Book Now</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img class="wwr-nav-photo" src="images/wwr-nav-2.jpeg">
+                <img class="RaftingRodeoImage" src="images/RaftingRodeoImage.png">
+                <div class="text">The Wildest Ride In The Frontier</div>
+                <div class="book-now">
+                    <a href="#">Book Now</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img class="wwr-nav-photo" src="images/wwr-nav-3.jpeg">
+                <img class="RaftingRodeoImage" src="images/RaftingRodeoImage.png">
+                <div class="text">The Wildest Ride In The Frontier</div>
+                <div class="book-now">
+                    <a href="#">Book Now</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img class="wwr-nav-photo" src="images/wwr-nav-4.jpeg">
+                <img class="RaftingRodeoImage" src="images/RaftingRodeoImage.png">
+                <div class="text">The Wildest Ride In The Frontier</div>
+                <div class="book-now">
+                    <a href="#">Book Now</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img class="wwr-nav-photo" src="images/wwr-nav-5.jpeg">
+                <img class="RaftingRodeoImage" src="images/RaftingRodeoImage.png">
+                <div class="text">The Wildest Ride In The Frontier</div>
+                <div class="book-now">
+                    <a href="#">Book Now</a>
+                </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 3000); // Change image every 3 seconds
+                }
+            </script>
+        </div>
+    </nav>
+    <section>
+        <h2>Choose Where Your Adventure Begins</h2>
+        <div class="river-locations-s">
+            <h1>River Locations</h1>
+            <ul>
+                <a href="wwr-river-locations.html"><img src="images/wwr-sor-rl.jpeg" width="600" height="300"></a>
+            </ul>
+        </div>
+        <div class="pricing-s">
+            <h1>Pricing</h1>
+            <ul>
+                <a href="wwr-pricing.html"><img src="images/wwr-sor-p.jpg" width="600" height="300"></a>
+            </ul>
+        </div>
+        <div class="about-s">
+            <h1>About</h1>
+            <ul>
+                <li><a href="wwr-about.html"><img src="images/wwr-sor-a.jpeg" width="600" height="300"></a>
+            </ul>
+        </div>
+        <div class="contact-us-s">
+            <h1>Contact Us</h1>
+            <ul>
+                <a href="wwr-contact.html"><img src="images/wwr-sor-cu.jpeg" width="600" height="300"></a>
+            </ul>
+        </div>
+    </section>
+    <article>
+        <h2>The Best Rafting Rodeo In The Frontier</h2>
+        <div class="article-image">
+            <img src="images/wwr-art.jpeg" width="1024" height="660">
+        </div>
+        <p>
+            <br>Rafting Rodeo is your official outfitter for an unparalleled Glacier National Park amphibious ride.<br>
+            <br>Our rafting rodeo experiences takes place on the scenic frontier river-tops of the North Fork, Middle Fork and South Fork of the Flathead River. Our paddle-powered adventures 
+            offer the riders a chance to witness the untamed Montana scenery from a whole new perspective, as we border the legendary frontier of Glacier National Park from a new angle.<br>
+            <br>From first timers to riding pros, we have a rafting rodeo experience suited for just about anyone on the river. Follow the lead of Glacier’s 
+                best guides as you paddle through rapids, take in the spectacular views and discover the wonders of the Flathead River on the adventure that’s right for you.<br>
+            <br>Discover more about our collection of possibilities to adventure with us today, so you can witness first hand the frontier fun with Glacier’s most well-known rafting company.<br>
+        </p>
+    </article>
+    <footer>
+        <div class="contact-us-f">
+            <h1>Contact Info</h1>
+            <address>
+                <ul>
+                    <li><a href=“tel:ROD-EOR-AFTN”><i class="fa-solid fa-phone"></i> Rod-eoR-aftN</a></li>
+                    <li><a href="mailto:reservations@raftingrodeog.com"><i class="fa-solid fa-envelope"></i> reservations@raftingrodeo.com</a></li>
+                    <li><a href="https://goo.gl/maps/FSAeroU1YBQKRqu87"><i class="fa-solid fa-map-pin"></i> 2700 River Avenue, West Glacier, Montana 59936</a></li>
+                    <li><a href="https://howdy0027.github.io/W01-Portal-Web-Page/wwr-website-updated.html"><i class="fa-solid fa-globe"></i> RaftingRodeo.com</a></li>
+                </ul>
+            </address>
+        </div>
+        <div class="river-locations-f">
+            <h1>River Locations</h1>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-water"></i> North Fork Flathead River</a></li>
+                <li><a href="#"><i class="fa-solid fa-water"></i> Middle Fork Flathead River</a></li>
+                <li><a href="#"><i class="fa-solid fa-water"></i> South Fork Flathead River</a></li>
+                <li><a href="#"><i class="fa-solid fa-water"></i> Flathead River</a></li>
+            </ul>
+        </div>
+        <div class="site-map-f">
+            <h1>Site Map</h1>
+            <ul>
+                <li><a href="wwr-website-updated.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="wwr-river-locations.html"><i class="fa-solid fa-mountain-sun"></i> River Locations</a></li>
+                <li><a href="wwr-pricing.html"><i class="fa-solid fa-dollar-sign"></i> Pricing</a></li>
+                <li><a href="wwr-about.html"><i class="fa-solid fa-users"></i> About</a></li>
+                <li></li><a href="wwr-contact.html"><i class="fa-solid fa-address-card"></i> Contact Us</a></li>
+                <li><a href="site-plan-rafting.html"><i class="fa-solid fa-palette"></i> White Water Rafting Siteplan</a></li>
+            </ul>
+        </div>
+        <div class="social-media-links-f">
+            <h1>Socail Media Links</h1>
+            <ul>
+                <a href="https://RaftingRodeo.facebook.com"><img src="images/facebook.png"></a>
+                <a href="https://RaftingRodeo.instagram.com"><img src="images/instagram.png"></a>
+                <a href="https://RaftingRodeo.twitter.com"><img src="images/twitter.png"></a>
+            </ul>
+        </div>
+        <div class="logo-f">
+            <img src="images/RaftingRodeoImage.png" width="50%">
+        </div>
+        <div class="copyright-f">
+            <img src="images/copyright-98570__340.png" width="15" height="15"> 2023 Rafting Rodeo, All rights reserved
+        </div>
+    </footer>
+</body>
+</html>
