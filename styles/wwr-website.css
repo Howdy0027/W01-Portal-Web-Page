@@ -119,7 +119,7 @@ h4 {
 .home-grid {
     font-family: var(--heading-font);
     display: grid;
-    grid-template-columns: 10fr;
+    grid-template-columns: repeat(10,1fr);
 }
 .rivers-card {
     margin: 200px 0;
@@ -172,7 +172,7 @@ main section img {
     grid-row: 4/9;
 }
 .msg {
-    background-color: var(--main-background-color);
+    background-color: var(--background-color);
     color: var(--main-text-color);
     line-height: 1.5em;
     padding: 35px;
@@ -244,6 +244,7 @@ footer a:hover{
         display: none;
     }
     .mountains, .msg {
+        background: var(--background2-color);
         width: 80%;
         display: block;
         margin: 0 auto;
