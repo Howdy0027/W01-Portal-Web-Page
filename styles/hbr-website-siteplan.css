@@ -6,7 +6,7 @@ Fonts are separated by a | */
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #F5DACF;
-  --secondary-color: #CF7239;
+  --secondary-color: tan;
   --tertiary-color:#D4AC0D;
   --accent1-color: #6F3317;
   --accent2-color: #45423D;
@@ -16,16 +16,16 @@ Fonts are separated by a | */
   --paragraph-font: "Bruno Ace";
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
+  --headline-color-on-white: #45423D;  /* headlines on a white background */ 
+  --headline-color-on-color: #D4AC0D; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #45423D; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #D4AC0D; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #6F3317  ;
   --nav-link-color: #D4AC0D;
   --nav-background-color: #6F3317;
   --nav-hover-link-color: #6F3317;
   --nav-hover-background-color: #D4AC0D;
-  background: #CF7239;
+  background: tan;
 }
 
 
@@ -148,17 +148,20 @@ nav a:hover {
 }
 .sm-home {
   grid-area: home;
-  background-color: #ccc;
+  background-color: #6F3317;
+  color: #D4AC0D;
   line-height: 3em;
 }
 .sm-page2 {
   grid-area: page2;
-  background-color: #ccc;
+  background-color: #6F3317;
+  color: #D4AC0D;
   line-height: 3em;
 }
 .sm-page3 {
   grid-area: page3;
-  background-color: #ccc;
+  background-color: #6F3317;
+  color: #D4AC0D;
   line-height: 3em;
 }
 
