@@ -134,12 +134,12 @@ nav a:hover {
   display: grid;
   justify-content: center;
 
-  grid-template-columns: repeat(6, 15%);
+  grid-template-columns: repeat(10, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+  grid-template-areas: ". . . . home home . . . ."
+    ". . . . . top . . . ."
+    ". . left middle middle middle middle right . ."
+    ". trail-locations trail-locations. about-us about-us .contact-us contact-us .";
 }
 .sitemap > div {
 
@@ -152,14 +152,20 @@ nav a:hover {
   color: #D4AC0D;
   line-height: 3em;
 }
-.sm-page2 {
-  grid-area: page2;
+.sm-trail-locations {
+  grid-area: trail-locations;
   background-color: #6F3317;
   color: #D4AC0D;
   line-height: 3em;
 }
-.sm-page3 {
-  grid-area: page3;
+.sm-about-us {
+  grid-area: about-us;
+  background-color: #6F3317;
+  color: #D4AC0D;
+  line-height: 3em;
+}
+.sm-contact-us {
+  grid-area: contact-us;
   background-color: #6F3317;
   color: #D4AC0D;
   line-height: 3em;
@@ -176,8 +182,17 @@ nav a:hover {
   border-left: 1px solid;
 }
 
+.middle {
+  grid-area: middle;
+  border-top: 1px solid;
+}
+
 .right {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+.photos {
+  width: 50%;
 }
