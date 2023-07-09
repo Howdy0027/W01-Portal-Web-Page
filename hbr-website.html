@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Frontier Riders</title>
+    <link rel="stylesheet" href="styles/hbr-website.css">
+</head>
+<body>
+    <div id="content"> 
+        <!-- Header/Navigation Bar -->
+        <header>
+            <nav>
+                <a href="hbr-website.html">Home</a>
+                <a href="hbr-trail-locations.html">Trail Locations</a>
+                <a href="hbr-trail-locations.html">Pricing</a>
+                <a href="hbr-about-us.html">About Us</a>
+                <a href="hbr-contact-us.html">Contact Us</a>
+            </nav>
+        </header>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides-fade">
+                <img class="hbr-slideshow-photos" src="images/hbr-hp-ss1.jpeg" alt="hbr slide show image 1">
+            </div>
+            <div class="mySlides-fade">
+                <img class="hbr-slideshow-photos" src="images/hbr-hp-ss2.jpeg" alt="hbr slide show image 2">
+            </div>
+            <div class="mySlides-fade">
+                <img class="hbr-slideshow-photos" src="images/hbr-hp-ss3.jpeg" alt="hbr slide show image 3">
+            </div>
+            <!-- Javascript for slideshow coding -->
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides-fade");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 5000); // Change image every 5 seconds
+                }
+            </script>
+            <!-- Slideshow Message -->
+            <section id="slideshow-msg">
+                <h1 class="home-title">The Wildest Ride In The Frontier</h1>
+                <div class='button-box'>
+                    <a class='book' href="hbr-contact-us.html">Book Now</a>
+                </div>
+            </section>
+            <!-- Logo -->
+            <div class="logo-box">
+                <img class="logo" src="images/AmericanFrontierRidersImage.png" alt="American Frontier Riders Logo">
+            </div>
+        </div>
+        <!-- Home Grid -->
+        <main class="home-grid">
+            <!-- Subtitle 1 -->
+            <section class="subtitle-1">
+                <h1>Choose Where Your Adventure Begins</h1>
+            </section>
+            <!-- Trail Locations -->
+            <section class="trail-locations-card">
+                <a href="hbr-trail-locations.html">
+                    <img class="card-img" src="images/hbr-hp-trail-locations.jpeg" alt="trails locations photo">
+                    <h2>Trail Locations</h2>
+                </a>
+            </section>
+            <!-- Pricing -->
+            <section class="pricing-card">
+                <a href="hbr-trail-locations.html">
+                    <img class="card-img" src="images/hbr-hp-pricing.jpeg" alt="pricing photo">
+                    <h2>Pricing</h2>
+                </a>
+            </section>
+            <!-- About Us -->
+            <section class="about-us-card">
+                <a href="hbr-about-us.html">
+                    <img class="card-img" src="images/hbr-hp-about-us.jpeg" alt="about us photo">
+                    <h2>About Us</h2>
+                </a>
+            </section>
+            <!-- Contact Us -->
+            <section class="contact-us-card">
+                <a href="hbr-contact-us.html">
+                    <img class="card-img" src="images/hbr-hp-contact-us.jpeg" alt="contact us photo">
+                    <h2>Contact Us</h2>
+                </a>
+            </section>
+        </main>
+        <!-- Summary and Image -->
+        <main class="summary-grid">
+            <section class="summary">
+                <!-- Summary Title -->
+                <h1>The Best Horseback Riding In The Frontier</h1>
+                <!-- Summary Image -->
+                <div class="summary-image">
+                    <img src="images/hbr-hp-bd.jpeg" alt="summary image for homepage">
+                </div>
+                <!-- Summary Paragraph -->
+                <p>
+                        Rafting Rodeo is your official outfitter for an unparalleled Glacier National Park amphibious ride.<br>
+                    <br>Our rafting rodeo experiences takes place on the scenic frontier river-tops of the North Fork, Middle Fork and South Fork of the Flathead River. Our paddle-powered adventures 
+                        offer the riders a chance to witness the untamed Montana scenery from a whole new perspective, as we border the legendary frontier of Glacier National Park from a new angle.<br>
+                    <br>From first timers to riding pros, we have a rafting rodeo experience suited for just about anyone on the river. Follow the lead of Glacier’s 
+                        best guides as you paddle through rapids, take in the spectacular views and discover the wonders of the Flathead River on the adventure that’s right for you.<br>
+                    <br>Discover more about our collection of possibilities to adventure with us today, so you can witness first hand the frontier fun with Glacier’s most well-known rafting company.<br>
+                </p>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="logo-f">
+                <img src="images/AmericanFrontierRidersImage.png" alt="American Frontier Riders Logo">
+                <p>American Frontier Riders &copy; 2023, All Rights Reserved</p>
+            </div>
+            <div class="contact-us-f">
+                <h1>Contact Info</h1>
+                <address>
+                    <ul>
+                        <li><a href=“tel:Fro-nti-Ride”>Fro-nti-Ride</a></li>
+                        <li><a href="mailto:reservations@AmericanFrontierRiders.com">reservations@AmericanFrontierRiders.com</a></li>
+                        <li><a href="https://goo.gl/maps/FSAeroU1YBQKRqu87"><i class="fa-solid fa-map-pin"></i> 2700 River Avenue, West Glacier, Montana 59936</a></li>
+                        <li><a href="https://howdy0027.github.io/W01-Portal-Web-Page/hbr-website.html"><i class="fa-solid fa-globe"></i> AmericanFrontierRiders.com</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="trail-locations-f">
+                <h1>Trail Locations</h1>
+                <ul>
+                    <li><a href="hbr-trail-locations.html">Huckleberry Mountain Trail</a></li>
+                    <li><a href="hbr-trail-locations.html">The Loop Trail</a></li>
+                    <li><a href="hbr-trail-locations.html">Hidden Falls Trail</a></li>
+                    <li><a href="hbr-trail-locations.html">Gunsight Pass Trail</a></li>
+                </ul>
+            </div>
+            <div class="site-map-f">
+                <h1>Site Map</h1>
+                <ul>
+                    <li><a href="hbr-website.html">Home</a></li>
+                    <li><a href="hbr-trail-locations.html">Trail Locations</a></li>
+                    <li><a href="hbr-trail-locations.html">Pricing</a></li>
+                    <li><a href="hbr-about-us.html">About Us</a></li>
+                    <li><a href="hbr-contact-us.html">Contact Us</a></li>
+                    <li><a href="hbr-website-siteplan.html">A.F.R. Siteplan</a></li>
+                </ul>
+            </div>
+            <div class="social-media-links-f">
+                <h1>Social Media Links</h1>
+                <ul>
+                    <a href="https://AmericanFrontierRiders.facebook.com"><img src="images/facebook.png"></a>
+                    <a href="https://AmericanFrontierRiders.instagram.com"><img src="images/instagram.png"></a>
+                    <a href="https://AmericanFrontierRiders.twitter.com"><img src="images/twitter.png"></a>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body> 
+</html>
