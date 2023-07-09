@@ -203,6 +203,7 @@ nav a:hover {
     width: 100%;
     bottom: -20px;
 }
+/* Summary Grid Coding */
 .summary {
     background-color: var(--summary-background-color);
     color: var(--summary-text-color);
@@ -228,10 +229,12 @@ nav a:hover {
     height: 100%;
 }
 .summary p {
+    background-color: tan;
     grid-column: 4 / 5;
     grid-row: 2 / 3;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    margin: auto 0;
+    padding: 50px;
 }
 /* Footer Coding */
 footer {
