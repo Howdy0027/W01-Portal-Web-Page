@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles/hbr-about-us.css">
+</head>
+<body>
+    <div id="content"> 
+        <!-- Header/Navigation Bar -->
+        <header>
+            <!-- Logo Photo -->
+            <div class="header-logo">
+                <img src="images/AmericanFrontierRidersImage.png" alt="American Frontier Riders Logo">
+            </div>
+            <!-- Nav Bar -->
+            <nav>
+                <a href="hbr-website.html">Home</a>
+                <a href="hbr-trail-locations.html">Trail Locations</a>
+                <a href="hbr-trail-locations.html">Pricing</a>
+                <a href="hbr-about-us.html">About Us</a>
+                <a href="hbr-contact-us.html">Contact Us</a>
+            </nav>
+        </header>
+        <!-- Main Photo -->
+        <div class="main-photo">
+            <div class="about-us-mp">
+                <img class="about-us-main" src="images/hbr-about-us-main.jpeg" alt="about us main picture">
+            </div>
+        </div>
+        <!-- Home Grid -->
+        <main class="home-grid">
+            <!-- Our Story -->
+            <section class="our-story">
+                <h2>Our Story</h2>
+                <p>
+                    <br>American Frontier Riders is your official outfitter for an unparalleled Glacier National Park ride on horseback.<br>
+                    <br>Our horseback riding experiences take place on the scenic american frontier, where our horse-powered transportation offers the riders a chance to witness the untamed Montana scenery from a whole new perspective, as we border the legendary mountain-sides of Glacier National Park from a new angle.<br>
+                    <br>From first timers to riding pros, we have an amercian fronetier rider experience suited for just about anyone on the trials. Follow the lead of Glacier’s best guides as you ride through forests, rivers, mountains, etc. as you take in the spectacular views and discover the wonders of the trials on the adventure that’s right for you.<br>
+                    <br>Discover more about our collection of possibilities to adventure with us today, so you can witness first hand the frontier fun with Glacier’s most well-known horseback riding company.<br>
+                </p>
+            </section>
+            <!-- Mission Statement -->
+            <section class="mission-statement">
+                <h2>Mission Statement</h2>
+                <p>
+                    When was the last time that you explored the American Frontier on the saddle of a majestic horse? Did you feel that satisfaction that comes from being an American? Here at American Frontier Riders, we provide you with an experience of a lifetime by creating a true bond between horse and man as you both cross the American Frontier through our various trails. Because “The history of mankind is carried on the back of a horse.”
+                </p>
+            </section>
+            <!-- Gallery -->
+            <section class="gallery">
+                <h2>Gallery</h2>
+                <div class="slideshow-container">
+                    <!-- Full-width images -->
+                    <div class="mySlibes fabe">
+                        <img class="hbr-gallery-images" src="images/hbr-gi-1.jpeg" alt="hbr gallery image 1">
+                    </div>
+                    <div class="mySlibes fabe">
+                        <img class="hbr-gallery-images" src="images/hbr-gi-2.jpeg" alt="hbr gallery image 2">
+                    </div>
+                    <div class="mySlibes fabe">
+                        <img class="hbr-gallery-images" src="images/hbr-gi-3.jpeg" alt="hbr gallery image 3">
+                    </div>
+                    <div class="mySlibes fabe">
+                        <img class="hbr-gallery-images" src="images/hbr-gi-4.jpeg" alt="hbr gallery image 4">
+                    </div>
+                    <div class="mySlibes fabe">
+                        <img class="hbr-gallery-images" src="images/hbr-gi-5.jpeg" alt="hbr gallery image 5">
+                    </div>
+                    <!-- Javascript for slideshow coding -->
+                    <script>
+                        let slibeIndex = 0;
+                        showSlibes();
+                        function showSlibes() {
+                        let i;
+                        let slibes = document.getElementsByClassName("mySlibes fabe");
+                        for (i = 0; i < slibes.length; i++) {
+                            slibes[i].style.display = "none";
+                        }
+                        slibeIndex++;
+                        if (slibeIndex > slibes.length) {slibeIndex = 1}
+                        slibes[slibeIndex-1].style.display = "block";
+                        setTimeout(showSlibes, 5000); // Change image every 5 seconds
+                        }
+                    </script>
+                </div>
+            </section>
+            <!-- Reviews -->
+            <section class="reviews">
+                <h2>Reviews</h2>
+                <div class="slideshow-container-2">
+                    <!-- Full-width images -->
+                    <div class="mySlides fade">
+                        <p>“Huckleberry Mountain Trail was a blast! I can’t believe how beautiful the area was. I should’ve brought a better camera! And the guides were super helpful too- I had no clue how much history this park has! Definitely worth the trip.” - Miles</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <p>“I had an absolute adventure with the American Frontier Riders this past weekend! They were very helpful and kind to new beginners. And shout out to the Hidden Falls Trail, it was beyond beautiful! Definitely going again.” - Aspen</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <p>“Rode gunsight pass with the family. The Guide was fantastic, and the views were breathtaking! I even got to see a grizzly bear and a moose! Highly recommend!” - Ethan</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <p>“American Frontier Rider's horses are gentle and so great for beginners.” - Maddie</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <p>“Prices are great and services was even better.” - Ava</p>
+                    </div>
+                    <!-- Javascript for slideshow coding -->
+                    <script>
+                        let slideIndex = 0;
+                        showSlides();
+                        function showSlides() {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides fade");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {slideIndex = 1}
+                        slides[slideIndex-1].style.display = "block";
+                        setTimeout(showSlides, 7000); // Change image every 7 seconds
+                        }
+                    </script>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="logo-f">
+                <img src="images/AmericanFrontierRidersImage.png" alt="American Frontier Riders Logo">
+                <p>American Frontier Riders &copy; 2023, All Rights Reserved</p>
+            </div>
+            <div class="contact-us-f">
+                <h1>Contact Info</h1>
+                <address>
+                    <ul>
+                        <li><a href=“tel:Fro-nti-Ride”>Fro-nti-Ride</a></li>
+                        <li><a href="mailto:reservations@AmericanFrontierRiders.com">reservations@AmericanFrontierRiders.com</a></li>
+                        <li><a href="https://goo.gl/maps/FSAeroU1YBQKRqu87"><i class="fa-solid fa-map-pin"></i> 2700 River Avenue, West Glacier, Montana 59936</a></li>
+                        <li><a href="https://howdy0027.github.io/W01-Portal-Web-Page/hbr-website.html"><i class="fa-solid fa-globe"></i> AmericanFrontierRiders.com</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="trail-locations-f">
+                <h1>Trail Locations</h1>
+                <ul>
+                    <li><a href="hbr-trail-locations.html">Huckleberry Mountain Trail</a></li>
+                    <li><a href="hbr-trail-locations.html">The Loop Trail</a></li>
+                    <li><a href="hbr-trail-locations.html">Hidden Falls Trail</a></li>
+                    <li><a href="hbr-trail-locations.html">Gunsight Pass Trail</a></li>
+                </ul>
+            </div>
+            <div class="site-map-f">
+                <h1>Site Map</h1>
+                <ul>
+                    <li><a href="hbr-website.html">Home</a></li>
+                    <li><a href="hbr-trail-locations.html">Trail Locations</a></li>
+                    <li><a href="hbr-trail-locations.html">Pricing</a></li>
+                    <li><a href="hbr-about-us.html">About Us</a></li>
+                    <li><a href="hbr-contact-us.html">Contact Us</a></li>
+                    <li><a href="hbr-website-siteplan.html">A.F.R. Siteplan</a></li>
+                </ul>
+            </div>
+            <div class="social-media-links-f">
+                <h1>Social Media Links</h1>
+                <a href="https://AmericanFrontierRiders.facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="facebook image">
+                </a>
+                <a href="https://AmericanFrontierRiders.instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram image">
+                </a>
+                <a href="https://AmericanFrontierRiders.twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter image">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body> 
+</html>
