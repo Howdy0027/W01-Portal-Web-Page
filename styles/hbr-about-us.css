@@ -72,6 +72,7 @@ nav a:hover {
 .main-photo {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    background-color: var(--background-color);
 }
 .about-us-mp {
     grid-column: 1/4;
@@ -86,7 +87,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: 50px 1fr 50px 1fr 50px 1fr 50px;
     grid-template-rows: 1fr 25px 1fr;
-    padding-bottom: 31px;
+    padding-bottom: 61px;
 }
 .home-grid h2 {
     font-family: var(--heading-font);
@@ -120,7 +121,7 @@ nav a:hover {
     width: 446.67px;
 }
 .gallery img {
-    height: 231px;
+    height: 271px;
     width: 100%;
 }
 .fabe {
