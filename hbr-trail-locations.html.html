@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="styles/hbr-contact-us.css">
+    <link rel="stylesheet" href="styles/hbr-trail-locations.css">
 </head>
 <body>
     <div id="content"> 
@@ -24,65 +24,15 @@
                 <a href="hbr-contact-us.html">Contact Us</a>
             </nav>
         </header>
+        <!-- Main Photo -->
+        <div class="main-photo">
+            <div class="about-us-mp">
+                <img class="about-us-main" src="images/hbr-about-us-main.jpeg" alt="about us main picture">
+            </div>
+        </div>
         <!-- Home Grid -->
         <main class="home-grid">
-            <div class="form-box">
-                <h2>Contact Us</h2>
-                <form action="/my-handling-form-page" method="post">
-                    <ul>
-                        <li>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="user_name">
-                        </li>
-                        <li>
-                            <label for="mail">Email:</label>
-                            <input type="email" id="mail" name="user_email">
-                        </li>
-                        <li>
-                            <label for="tele">Phone Number:</label>
-                            <input type="tel" id="tele" name="phone_number">
-                        </li>
-                        <li>
-                            <label for="msg">Message:</label>
-                            <textarea id="msg" name="user_message"></textarea>
-                        </li>
-                        <li class="button">
-                            <button type="submit">Submit Form</button>
-                        </li>
-                    </ul>
-                </form>
-            </div>
-            <div id="feedback"></div>
-            <script>
-                // get the feedback div element so we can do something with it.
-                const feedbackElement = document.getElementById('feedback');
-                // get the form so we can read what was entered in it.
-                const formElement = document.forms[0];
-                // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-                formElement.addEventListener('submit', function(e) {
-                // stop the form from doing the default action.
-                e.preventDefault();
-                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-                feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-                // make the feedback element visible.
-                feedbackElement.style.display = "block";
-                // add a class to move everything down so our message doesn't cover it.
-                document.body.classList.toggle('moveDown');
-                });
-            </script>
-            <div class="interactive-google-maps">
-                <div id="googleMap"></div>
-                <script>
-                function myMap() {
-                var mapProp= {
-                center:new google.maps.LatLng(48.497119, -113.987425),
-                zoom:16,
-                };
-                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                }
-                </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPxpTGSjEAU5W-WE_ibWw_gEFgU-DWNJk&callback=myMap"></script>               
-            </div>
+            dafa
         </main>
         <!-- Footer -->
         <footer>
