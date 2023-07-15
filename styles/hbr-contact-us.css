@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bruno+Ace+SC&display=swap');
+
+/* Website Font and Color Scheme */
+:root {
+    /* Font */
+    --heading-font: "Bruno Ace SC";
+    --paragraph-font: "Bruno Ace";
+    /* Background Color */
+    --background-color: tan;
+    --overall-background-color: #2b2a2a;
+    /* Header/Navigation Color Scheme */
+    --nav-background-color: #6F3317;
+    --nav-link-color: #D4AC0D;
+    --nav-hover-background-color: #D4AC0D;
+    --nav-hover-link-color: #6F3317;
+    /* Home Grid Coding */
+    --form-text-color: #6F3317;
+    --form-underline-text-color: #00A000;
+    --form-background-color: #a1896b;
+    --form-box-outline-color: #6F3317;
+    --form-box-focus-color: black;
+    --form-submit-button-color: #00A000;
+    --form-submit-text-color: white;
+    --form-hover-submit-button-color: #008000ab;
+    --feedback-background-color: #D4AC0D;
+    --feedback-text-color: #6F3317;
+    /* Footer Color Scheme */
+    --footer-background-color: #6F3317;
+    --footer-link-color: #D4AC0D;
+    --footer-hover-background-color: #D4AC0D;
+    --footer-hover-link-color: #6F3317;
+}
+/* Whole Page Coding */
+body {
+    background-color: var(--overall-background-color);
+    font-family: var(--paragraph-font);
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/* Header/Navigation Coding */
+header {
+    background-color:var(--nav-background-color);
+    text-align: center;
+    font-size: 1.2em;
+    font-family: var(--heading-font);
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+.header-logo {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.header-logo img {
+    width: 30%;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    color: var(--nav-link-color);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: auto 50px;
+}  
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+/* Form Coding */
+.home-grid {
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 75px 1fr 75px 1fr 75px;
+    padding: 50px 0px;
+}
+.form-box {
+    background-color: var(--form-background-color);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    color: var(--form-text-color);
+    border-radius: 15%;
+    border: solid black;
+}
+.form-box h2 {
+    font-family: var(--heading-font);
+    text-decoration: underline var(--form-underline-text-color);
+    text-align: center;
+    text-underline-offset: 10px;
+}
+form {
+    margin: 50px auto;
+    width: 600px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+form li + li {
+    margin-top: 1em;
+}
+label {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+}
+input, textarea {
+    font: 2em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--form-box-outline-color);
+    height: 4em;
+}
+input:focus, textarea:focus {
+    border-color: var(--form-box-focus-color);
+}
+textarea {
+    height: 12em;
+}
+.button {
+    text-align: center;
+    list-style: none;
+}
+button {
+    background-color: var(--form-submit-button-color);
+    color: var(--form-submit-text-color);
+    font-family: var(--heading-font);
+    border: none;
+    font-size: 2em;
+    margin-top: 25px;
+}
+button:hover {
+    background-color: var(--form-hover-submit-button-color);
+}
+#feedback {
+    background-color: var(--feedback-background-color);
+    color: var(--feedback-text-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: .5em 0;
+    display: none;
+    text-align: center;      
+}
+.moveDown {
+    margin-top: 2em;
+}
+.interactive-google-maps {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    border: solid black;
+}
+#googleMap {
+    width: 100%;
+    height: 100%;
+}
+/* Footer Coding */
+footer {
+    background-color: var(--footer-background-color);
+    color: var(--footer-link-color);
+    font-size: .75em;
+    font-family: var(--heading-font);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer li {
+    list-style-type: none;
+    padding: 3px;
+}
+footer a {
+    color: var(--footer-link-color);
+    text-decoration: none;
+}
+footer a:hover{
+    background-color: var(--footer-hover-background-color);
+    color: var(--footer-hover-link-color);
+}
+.logo-f {
+    max-width: 320px;
+}
+.logo-f img {
+    width: 25%;
+}
+.contact-us-f {
+    max-width: 320px;
+}
+.trail-locations-f {
+    max-width: 320px;
+}
+.site-map-f {
+    max-width: 320px;
+}
+.social-media-links-f {
+    max-width: 320px;
+}
